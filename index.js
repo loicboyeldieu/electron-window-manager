@@ -1048,7 +1048,11 @@
              * */
             'watch': function(prop, callback){
                 this.watcher.watch(this.data, prop, callback);
-            }
+            },
+		
+	    'unwatch': function(prop, callback){
+		this.watcher.unwatch(this.data, prop, callback);    
+	    }
         },
 
         /**
